@@ -6,7 +6,7 @@ In this demo the password field is vulnerable.
 
 2.  The following input in the password field will login as any valid user specified in the username field:  ' OR user_id = 'jdoe3
 
-This example also illustrates why "front-end" validation is not sufficient for security, especially for the web.  It can be demonstrated by using a tool like firebug to inspect the password field and change the type from "password" to "text".  The "maxlength" attribute can also be removed to allow for longer input.
+This example also illustrates why "front-end" validation is not sufficient for security, especially for the web.  It is evident by using a tool like firebug to inspect the password field and change the type from "password" to "text".  The "maxlength" attribute can also be removed to allow for longer input.
 
 To run this application you will need the following:
 
