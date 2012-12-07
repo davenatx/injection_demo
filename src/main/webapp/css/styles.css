@@ -1,0 +1,210 @@
+/*
+
+Designed By: David Price
+
+Primary Colors:
+
+yellow: #FFF1C5;
+background-gray: #D4D4D4;
+background-blue: #94B3DE
+*/
+
+/******************************************
+Generic Layout
+*******************************************/
+ul, li, img, body, html {
+    margin: 0; padding: 0;
+}
+
+body {
+    font-size: 90%;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    line-height: 1.6em;
+    text-align: center;
+    color: #333333;
+    background: #D4D4D4;
+}
+
+input {
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+/******************************************
+Generic Container
+*******************************************/
+div#container {
+    text-align: left;
+    width: 800px;
+    margin: auto;
+}
+
+div#top-container {
+    float: left;
+    background-color: #94B3DE;
+    padding: 10px 10px 10px;
+}
+
+/******************************************
+Generic Header 
+*******************************************/
+div#header {
+    float: left;
+    width: 800px;
+    background-color: #F1F1F1;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    line-height: 1em;
+}
+
+div#header h2 {
+    padding-left: 1em;
+    font-style: italic;
+    color: #666666;
+}
+
+div#header h3 {
+    padding-left: 1.3em;
+    color: #666666;
+}
+
+/******************************************
+Generic Footer
+*******************************************/
+div#footer {
+    float:left;
+    width: 820px;
+    border-top: 1px solid #dddddd;
+    font-weight: bold;
+    font-size: .7em;
+    color: #FFFFFF;
+    background-color: #666666;
+    text-align: center;
+}
+
+/******************************************
+Login Container
+*******************************************/
+div#loginContainer {
+    float: left;
+    background-color: #FFF1C5;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 400px;
+    padding-left: 1em;
+    padding-bottom: .5em;
+    padding-top: .5em;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+div#loginContainer label {
+    font-weight: bold;
+}
+
+div#loginContainer .user {
+    margin-left: 20px;
+    border: 2px solid #666666;
+}
+
+div#loginContainer .user:focus {
+    background-color: #FFF1C5
+}
+
+div#loginContainer .pass {
+    margin-left: 21px;
+    border: 2px solid #666666;
+}
+
+div#loginContainer .pass:focus {
+    background-color: #FFF1C5
+}
+
+div#loginContainer .button {
+    margin-left: 85px;
+    margin-top: 5px;
+    background-color:#0A7DAD;
+    border: none;
+    color:#FFFFFF;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 2px;
+}
+
+div#loginContainer .button:hover {
+    background-color: #444A6C;
+}
+/******************************************
+User Information
+******************************************/
+#userinfo {
+    float:left;
+    margin-top: 10px;
+    margin-left: 40px;
+    width: 718px;
+    background-color: #FFF1C5;
+}
+
+#userinfo h3 {
+    margin-top: 0px;
+    padding-left: 5px;
+    border: none;
+    background-color:#0A7DAD;
+    color:#FFFFFF;
+}
+
+#userinfo label {
+    padding-left: 5px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/******************************************
+Payment Table
+******************************************/
+#table {
+    float: left;
+    margin-top: 10px;
+    margin-left: 40px;
+    width: 718px;
+}
+#table th {
+    padding-right: 20px;
+}
+
+#user .button {
+    margin-left: 40px;
+    margin-top: 5px;
+    background-color:#0A7DAD;
+    border: none;
+    color:#FFFFFF;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 2px;
+}
+
+div#user .button:hover {
+    background-color: #444A6C;
+}
+/******************************************
+Lift Notices
+******************************************/
+#lift__noticesContainer___error {
+    font-size: 1.1em;
+    background-color: red;
+    padding-left: .5em;
+    width: 200px;
+    padding-bottom: 5px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#lift__noticesContainer___error ul {
+    list-style-type: none;
+}

@@ -1,0 +1,25 @@
+This project is built with the Liftweb framework and is designed to demonstrate a SQL injection exploit.  One of the many reasons Lift was chosen was to explicitly show how using raw SQL with its built in Mapper ORM requires one to "sign off" on the SQL statement.  This helps instill good practices and also flags the code that needs careful attention during a security audit.
+
+In this demo the password field is vulnerable.
+
+1.  The following input in the password field will login as the first user returned from the database:  ' OR '1' = '1
+
+2.  The following input in the password field will login as any valid user specified in the username field:  ' OR user_id = 'jdoe3
+
+This example also illustrates why "front-end" validation is not sufficient for security, especially for the web.  It can be demonstrated by using a tool like firebug to inspect the password field and change the type from "password" to "text".  The "maxlength" attribute can also be removed to allow for longer input.
+
+To run this application you will need the following:
+
+1.  Download this project from github (https://github.com/davenatx/InjectionDemo)
+
+2.  From a command line, change directories into the directory where this project resides
+
+3.  Run "sbt" (Simple Build Tool)
+
+4.  After it finishes loading, type "container:start"
+
+5.  Open a web browser and navigate to http://localhost:8080 
+
+6.  Use the following test account:
+      user: jdoe3
+      password: password

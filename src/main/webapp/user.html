@@ -1,0 +1,65 @@
+<lift:surround with="default" at="content">
+    <div id="user">
+        <div id="userinfo">
+            <h3>Student Information</h3>
+
+            <lift:User.getDetails>
+                <label>Name:</label> <span><detail:name/></span><br/>
+                <label>Birthday:</label> <span><detail:birthDate/></span><br/>
+                <label>Social Security Number:</label> <span><detail:ssn/></span><br/>
+                <label>Student ID Number:</label> <span><detail:studentIdNum/></span><br/>
+                <label>Class:</label> <span><detail:classLevel/></span>
+            </lift:User.getDetails>
+
+        </div>
+        <div id="table">
+            <lift:User.getPayments>
+                <table id="myTable" class="tablesorter">
+                    <thead>
+                    <tr>
+                        <th>Payment Date</th>
+                        <th>Amount</th>
+                        <th>Account Type</th>
+                        <th>Card Type</th>
+                        <th>Card Number</th>
+                        <th>Card Expiration Date</th>
+                        <th>Name On Card</th>
+                    </tr>
+                    </thead>
+                    <paymentList:list>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <payment:paymentDate/>
+                            </td>
+                            <td>
+                                <payment:amount/>
+                            </td>
+                            <td>
+                                <payment:account/>
+                            </td>
+                            <td>
+                                <payment:cardType/>
+                            </td>
+                            <td>
+                                <payment:cardNumber/>
+                            </td>
+                            <td>
+                                <payment:cardExpDate/>
+                            </td>
+                            <td>
+                                <payment:nameOnCard/>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </paymentList:list>
+                </table>
+            </lift:User.getPayments>
+        </div>
+        <lift:User.logout form="POST">
+            <logout:submit/>
+        </lift:User.logout>
+    </div>
+    <lift:User.tableSorter/>
+    <lift:User.tableSorterCSS/>
+</lift:surround>

@@ -1,0 +1,3 @@
+12-07 01:33:51 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "SELECT students.id, students.updated_at, students.created_at, students.student_id_num, students.ssn, students.user_id, students.password, students.first_name, students.last_name, students.birth_date, students.class_level FROM students   WHERE  ( user_id = '' AND password = '' OR '3 = '3[*]' ) "; SQL statement:
+SELECT students.id, students.updated_at, students.created_at, students.student_id_num, students.ssn, students.user_id, students.password, students.first_name, students.last_name, students.birth_date, students.class_level FROM students   WHERE  ( user_id = '' AND password = '' OR '3 = '3' )  [42000-167]

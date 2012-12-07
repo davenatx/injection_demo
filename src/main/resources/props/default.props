@@ -1,0 +1,4 @@
+;db.class=org.postgresql.Driver
+;db.url=jdbc:postgresql://localhost/student_accounts
+;db.user=postgres
+;db.pass=password
