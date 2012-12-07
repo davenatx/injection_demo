@@ -10,7 +10,7 @@ This example also illustrates why "front-end" validation is not sufficient for s
 
 To run this application you will need the following:
 
-1.  Download this project from github (https://github.com/davenatx/InjectionDemo)
+1.  Download this project from github (https://github.com/davenatx/injection_demo)
 
 2.  From a command line, change directories into the directory where this project resides
 
